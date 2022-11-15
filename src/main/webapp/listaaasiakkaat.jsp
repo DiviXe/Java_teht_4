@@ -10,7 +10,6 @@
 </head>
 <body>
 <table id="listaus">
-	<thead>	
 		<tr>
 			<th>Hakusana:</th>
 			<th colspan="2"><input type="text" id="hakusana"></th>
@@ -22,9 +21,7 @@
 			<th>Puhelin</th>
 			<th>Sähköposti</th>			
 		</tr>
-	</thead>
-	<tbody id="tbody">
-	</tbody>
+
 </table>
 </body>
 </html>

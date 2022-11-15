@@ -26,12 +26,11 @@ public class Asiakas extends HttpServlet {
 
 	
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("Asiakas.doGet()");
-		Dao dao = new Dao();
-		ArrayList<Asiakkaat> asiakkaat = dao.getAllItems();
+    	System.out.println("Asiakkaat.doGet()");
 		String hakusana = request.getParameter("hakusana");
 		String strJSON = "";
-		System.out.println(strJSON);
+		Dao dao = new Dao();
+		ArrayList<Asiakkaat> asiakkaat = dao.getAllItems();
 		if(hakusana!=null) {
 			if(!hakusana.equals("")) {
 				asiakkaat = dao.getAllItems(hakusana); 							
